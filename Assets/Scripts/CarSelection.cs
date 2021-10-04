@@ -1,28 +1,72 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class CarSelection : MonoBehaviour {
+public class CarSelection : MonoBehaviour
+{
+    public GameObject car1;
+    public GameObject car2;
+    public GameObject car3;
+    public GameObject car4;
+    public GameObject car5;
+    public GameObject car6;
+    public GameObject button1;
+    public GameObject button2;
+    public GameObject button3;
+    public GameObject button4;
+    public GameObject button5;
+    public GameObject button6;
 
-   // [SerializeField]private Button previousButton;
-   // [SerializeField] private Button nextButton;
-    private int currentCar;
-
-    private void SelectCar(int _index)
+    public void loadcar1()
     {
-     //   previousButton.interactable = (_index != 0);
-     //   nextButton.interactable = (_index != transform.childCount-1);
-        for (int i = 0; i < transform.childCount; i++)
-        {
-            transform.GetChild(i).gameObject.SetActive(i == _index);
-        }
+        car1.SetActive(true);
+        car2.SetActive(false);
+        car3.SetActive(false);
+        car4.SetActive(false);
+        car5.SetActive(false);
+        car6.SetActive(false);
+        button1.SetActive(true);
+        button2.SetActive(false);
+        button3.SetActive(false);
+        button4.SetActive(false);
+        button5.SetActive(false);
+        button6.SetActive(false);
+
     }
 
-    public void ChargeCar(int _change)
+    public void loadcar2()
     {
-        currentCar += _change;
-        SelectCar(currentCar);
+        car1.SetActive(false);
+        car2.SetActive(true);
+        car3.SetActive(false);
+        car4.SetActive(false);
+        car5.SetActive(false);
+        car6.SetActive(false);
+        button1.SetActive(false);
+        button2.SetActive(true);
+        button3.SetActive(false);
+        button4.SetActive(false);
+        button5.SetActive(false);
+        button6.SetActive(false);
     }
 
+    public void loadcar3()
+    {
+
+    }
+
+    public void loadcar4()
+    {
+
+    }
+
+    public void loadcar5()
+    {
+
+    }
+
+    public void loadcar6()
+    {
+
+    }
 }

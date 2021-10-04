@@ -24,6 +24,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - USE_ALBEDO_TEXTURE: 1
     - _Auto_Pulse_: 0
@@ -57,3 +58,4 @@ Material:
     - _Fill_Color_: {r: 0.15294118, g: 0.27058825, b: 0.5372549, a: 1}
     - _Line_Color_: {r: 0.5882353, g: 0.84313726, b: 1, a: 1}
     - _Pulse_Origin_: {r: 0.5, g: 0.5, b: 0, a: 0}
+  m_BuildTextureStacks: []
