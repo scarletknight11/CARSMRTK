@@ -8,14 +8,9 @@ public class CannonBehavior : MonoBehaviour {
 	public GameObject m_shotPrefab;
 	//public Texture2D m_guiTexture;
 
-	// Use this for initialization
-	void Start()
-	{
-
-	}
-
+	
 	// Update is called once per frame
-	void Update()
+	void Update () 
 	{
 		if (Input.GetKey(KeyCode.LeftArrow))
 		{
@@ -32,10 +27,11 @@ public class CannonBehavior : MonoBehaviour {
 		}
 	}
 
-	public void LaserCannon()
-    {
+	// Update is called once per frame
+	public void LaserFire()
+	{
 		GameObject go = GameObject.Instantiate(m_shotPrefab, m_muzzle.position, m_muzzle.rotation) as GameObject;
-		GameObject.Destroy(go, 3f);
+		GameObject.Destroy(go, 2f); 
 	}
 
 	//void OnGUI()
